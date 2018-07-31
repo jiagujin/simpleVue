@@ -15,7 +15,9 @@
                 arr:[1,3,4]
             }
         })
-        console.log(vm._data.arr )
+        new Watcher();
+        /* 在这里模拟render的过程，为了触发test属性的get函数 */
+        console.log('render~', vm._data.test);
     </script>
 </body>
 </html>
