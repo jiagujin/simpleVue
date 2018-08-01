@@ -12,12 +12,13 @@
         var vm = new Vue({
             data:{
                 test: "I am test.",
-                arr:[1,3,4]
+                arr:[1,3,4],
+                dd:[1,3,4]
             }
         })
         new Watcher();
-        /* 在这里模拟render的过程，为了触发test属性的get函数 */
-        console.log('render~', vm._data.test);
+        console.log('render~', vm.data.test);
+        vm.data.test ='dddd'
     </script>
 </body>
 </html>
